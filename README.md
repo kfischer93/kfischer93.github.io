@@ -10,8 +10,8 @@ This is my repo for ATLS2200.
 
 ## In-Class Assignments
 
-- ICA1
-- ICA2
+- <a href="https://github.com/kfischer93/kfischer93.github.io/blob/main/Fischer_Katie_inclassactivity1.pdf">ICA1</a> 
+- <a href="https://github.com/kfischer93/kfischer93.github.io/blob/main/Copy%20of%20ICA2%20--%20Exploring%20Directory%20Structures%20(Week%202).pdf">ICA2</a> 
 - ICA3
 - ICA4
 - ICA5
