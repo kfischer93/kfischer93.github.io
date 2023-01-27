@@ -29,7 +29,7 @@ This is my repo for ATLS2200.
 ## Weekly Assignments
 
 - <a href="https://kfischer93.github.io/wa/wa1.html">WA1</a> 
-- WA2
+- <a href="https://kfischer93.github.io/wa/wa2.html">WA2</a>
 - WA3
 - WA4
 - WA5
