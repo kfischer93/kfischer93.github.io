@@ -1,12 +1,19 @@
-p {
+#first {
     color:rgb(229, 255, 127)
 }
 
-h1 {
-    font-size: 500%;
-    color:blueviolet;
+.title {
+    color:rgb(255, 127, 210);
+    font-size: 300%;
+}
+
+.thisisaclass {
+    color:palegreen
 }
 
 html {
     background-color: azure;
+}
+.divtest {
+    background-color: cornflowerblue;
 }
