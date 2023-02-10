@@ -1,0 +1,110 @@
+/* General styles - put these straight into your stylesheet */
+
+body {
+  margin: 0;
+}
+html {
+  font-family: 'Helvetica neue', Arial, 'sans serif';
+  font-size: 10px;
+  background-color: #ccc;
+}
+
+/* chris's card */
+
+.card  {
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  background-color: red;
+  border: 0.2em solid black;
+  border-radius: 1.5em;
+}
+.card header  {
+  padding: 1em;
+  height: 3em;
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+  border-radius: 1.5em 1.5em 0 0;
+}
+.card footer  {
+  padding: 1em;
+  height: 2em;
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+  border-radius: 0 0 1.5em 1.5em;
+  font-size: 1.3em;
+}
+.card article img  {
+  height: 12em;
+  float: right;
+}
+.card article p {
+  padding: 1em;
+  height: 10em;
+  background-color: rgba(0, 0, 0, 0.489);
+}
+.card h2  {
+  margin: 0;
+  font-size: 2em;
+  line-height: 2em;
+}
+.card p  {
+  font-size:1em;
+  color: white; 
+  margin: 0;
+}
+.card footer p{
+  color: black;
+  font-size: 1.13em;
+}
+
+
+/* billie's card */
+
+.billcard  {
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  background-color: rgb(226, 44, 138);
+  border: 0.2em solid rgb(252, 251, 251);
+  border-radius: 1.7em;
+}
+.billcard header  {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  padding: 1em;
+  height: 3em;
+  background-image: linear-gradient(to bottom,rgba(251, 250, 250, 0.526), rgba(0,0,0,0));
+  border-radius: 1.5em 1.5em 0 0;
+}
+.billcard footer  {
+  padding: 1em;
+  height: 2em;
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
+  border-radius: 0 0 1.5em 1.5em;
+  font-size: 1.3em;
+}
+.billcard article img  {
+  height: 12em;
+  float: right;
+}
+.billcard article p {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 1em;
+  padding: 1em;
+  height: 10em;
+  background-color: rgba(9, 9, 9, 0.28);
+}
+.billcard h2  {
+  margin: 0;
+  font-size: 2em;
+  line-height: 2em;
+}
+.billcard p  {
+  font-size:1em;
+  color: white; 
+  margin: 0;
+}
+.billcard footer p{
+  font-family: cursive;
+  font-style: oblique;
+  color: black;
+  font-size: 1.5em;
+}
