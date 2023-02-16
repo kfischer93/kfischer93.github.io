@@ -1,0 +1,86 @@
+html,body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#background {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#overlaylogo img{
+    width: 145px;
+    height: 150px;
+    filter: drop-shadow(5px 5px 5px #2222228f);
+    position:absolute; 
+    top: 50px;
+    left: 50px;
+}
+
+#jeepoverlay {
+    font-family:Helvetica;
+    font-weight: bolder;
+    color: rgb(254, 252, 252);
+    font-size: 50px;
+    filter: drop-shadow(5px 5px 5px #2222228f);
+    position:absolute; 
+    top: 205px;
+    left: 65px;
+}
+
+#overlayred {
+    width: 400px;
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(238, 52, 10, 0.802);
+    filter: drop-shadow(5px 5px 5px #222222da);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px;
+    text-shadow: 5px 5px 5px #2222227a;
+    color: white;
+    position: absolute; 
+    bottom: 50px;
+    right: 50px;
+}
+
+#overlayblue {
+    width: 600px;
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(10, 158, 238, 0.802);
+    filter: drop-shadow(5px 5px 5px #222222da);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+    font-style: oblique;
+    text-shadow: 5px 5px 5px #2222227a;
+    color: white;
+    position: absolute; 
+    bottom: 190px;
+    right: 100px;
+}
+
+#overlaywhite {
+    width: 130px;
+    padding: 10px;
+    text-align: right;
+    background-color: rgba(232, 233, 234, 0.404);
+    border-style: solid;
+    filter: drop-shadow(5px 5px 5px #222222da);
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    position: absolute; 
+    top: 50px;
+    right: 50px;
+    animation:2050ms 1 forwards ani;
+}
+@keyframes ani {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
