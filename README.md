@@ -32,7 +32,7 @@ This is my repo for ATLS2200.
 - <a href="https://kfischer93.github.io/wa/wa2.html">WA2</a>
 - <a href="https://kfischer93.github.io/wa/wa3.html">WA3</a>
 - <a href="https://kfischer93.github.io/wa/wa4.html">WA4</a>
-- WA5
+- <a href="https://kfischer93.github.io/wa/WA5.html">WA5</a>
 - WA6
 - WA7
 - WA8
