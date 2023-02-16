@@ -9,7 +9,7 @@
   body {
     margin: 0;
     background: #ccccccab;
-    background-image:linear-gradient(rgba(173, 170, 170, 0.219),rgba(255, 255, 255, 0.725) 15% 75%,rgba(0, 0, 0, 0.185)), url(/img/top-image.png), url(/img/bottom-image.png);
+    background-image:linear-gradient(rgba(30, 30, 30, 0.561),rgba(255, 255, 255, 0.725) 15% 75%,rgba(101, 99, 99, 0.185)), url(/img/top-image.png), url(/img/bottom-image.png);
     background-position: center, top, bottom;
     background-repeat: no-repeat;
     background-color: white;
