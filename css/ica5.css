@@ -13,8 +13,8 @@
     background-position: center, top, bottom;
     background-repeat: no-repeat;
     background-color: white;
-    border-top: 1mm solid red;
-    border-bottom: 1mm solid red;
+    border-top: 1mm solid rgb(246, 255, 0);
+    border-bottom: 1mm solid rgb(246, 255, 0);
   }
   
   article {
@@ -43,6 +43,6 @@
     color: white;
     text-shadow: 1px 1px 1px black;
     background-image: url("logo.png");
-    filter: drop-shadow(5px 5px 3px #680101)
+    filter: drop-shadow(5px 5px 3px #c5b9b9)
   }
   
