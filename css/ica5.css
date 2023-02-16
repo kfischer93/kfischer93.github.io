@@ -8,8 +8,8 @@
   
   body {
     margin: 0;
-    background: #ccc;
-    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(255, 255, 255, 0.993) 15% 75%,rgba(0,0,0,0.4)), url(/img/top-image.png), url(/img/bottom-image.png);
+    background: #ccccccab;
+    background-image:linear-gradient(rgba(173, 170, 170, 0.219),rgba(255, 255, 255, 0.725) 15% 75%,rgba(0, 0, 0, 0.185)), url(/img/top-image.png), url(/img/bottom-image.png);
     background-position: center, top, bottom;
     background-repeat: no-repeat;
     background-color: white;
