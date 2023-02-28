@@ -1,0 +1,33 @@
+
+body{
+    background-color: khaki;
+}
+#box1{
+    width: 25vw;
+    height: 20vh;
+    background-color: indianred;
+}
+#box1:hover{   
+    background-color: purple;
+}
+
+#box2{
+    width: 25vw;
+    height:20vh;
+    position: relative;
+    background-color: orangered;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-name: skew;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes skew {
+    0% {left: 35vw; top:0;}
+    10% { transform: skewX(0deg); }
+    20% { transform: skewX(15deg);}
+    50% {transform:rotate(0deg);}
+    75% {transform:rotate(360deg);}
+    100% {background-color:aqua; left: 35vh; top:0; height: 10vh;}
+}
