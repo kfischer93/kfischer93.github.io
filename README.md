@@ -16,7 +16,7 @@ This is my repo for ATLS2200.
 - <a href="https://kfischer93.github.io/ica/ica4.html"> ICA4</a>
 - <a href="https://kfischer93.github.io/ica/ica5.html"> ICA5</a>
 - <a href="https://kfischer93.github.io/ica/ica6-part1.html"> ICA6</a>
-- ICA7
+- <a href="https://kfischer93.github.io/ica/ica7.html"> ICA7</a>
 - ICA8
 - ICA9
 - ICA10
