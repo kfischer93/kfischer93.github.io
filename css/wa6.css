@@ -34,16 +34,6 @@ body {
     left: 0px;
   }
   
-  nav ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    flex-wrap: nowrap;
-    list-style: none;
-
-  }
   
   nav a {
     color: #fff;
@@ -69,26 +59,4 @@ body {
     padding-bottom: 20px;
   }
 
-  @media screen and (max-width: 500px) {
-    body {
-      background-color: rgb(235, 243, 84);
-    }
-  
-        nav ul {
-          display: block;
-        }
-
-        nav {
-            background-color: pink;
-        }
-  
-        .feature {
-          float: none;
-          margin-right: 10px;
-          
-        }
-  
-        .grid {
-          display: block;
-        }
-}
+ 
