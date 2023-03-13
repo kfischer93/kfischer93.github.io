@@ -71,7 +71,7 @@ main {
     margin: 0 auto;
 }
 
-#about {
+  #about {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,18 +87,20 @@ main {
     width: 50%;
     margin-right: 20px;
   }
-  .about-content h2 {
-    font-size: 60px;
-    font-style: italic;
-    color: rgb(243, 56, 14);
-    line-height: 1.5;
-  }
+  
   .about-content p {
+    width: 50%;
+    font-size: 18px;
+    line-height: 1.5;
     font-family:Helvetica;
     font-style:normal;
     font-weight: lighter;
     color: black;
-    font-size: 18px;
+  }
+  .about-content h2 {
+    font-size: 60px;
+    font-style: italic;
+    color: rgb(243, 56, 14);
     line-height: 1.5;
   }
 
