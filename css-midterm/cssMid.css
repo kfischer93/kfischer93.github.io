@@ -118,53 +118,55 @@ main {
     height: auto;
 }
 
-.contact-form {
-    margin: auto;
-    max-width: 500px;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-  }
+@media screen and (max-width: 768px) {
+    header img {
+      max-width: 200px;
+      margin: 0 10px;
+    }
   
-  /* Form input fields */
-  .contact-form input[type=text], 
-  .contact-form input[type=email], 
-  .contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize: vertical;
-    margin-bottom: 10px;
-  }
+    nav {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100vh;
+      background-color: #e1dcd3;
+      z-index: 999;
+      transition: all 0.3s ease-in-out;
+    }
   
-  /* Form label */
-  .contact-form label {
-    font-weight: bold;
-  }
+    nav ul {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
   
-  /* Form button */
-  .contact-form button[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+    nav li {
+      margin: 10px 0;
+    }
   
-  /* Form button hover effect */
-  .contact-form button[type=submit]:hover {
-    background-color: #45a049;
-  }
+    nav a {
+      font-size: 20px;
+    }
   
-  /* Form success message */
-  .contact-form .success-message {
-    color: green;
-  }
+    nav.active {
+      left: 0;
+    }
   
-  /* Form error message */
-  .contact-form .error-message {
-    color: red;
-  }
+    .about-content img {
+      margin-bottom: 0;
+    }
+  
+    .about-content h2 {
+      font-size: 24px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+  
+    .about-content p {
+      font-size: 14px;
+    }
+  
+    .photo-grid {
+      grid-template-columns: repeat(
