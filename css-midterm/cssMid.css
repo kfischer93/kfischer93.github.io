@@ -118,7 +118,7 @@ main {
     height: auto;
 }
 
-@media screen and (max-width: 768px) {}
+/* @media screen and (max-width: 768px) {}
     header img {
       max-width: 200px;
       margin: 0 10px;
@@ -170,7 +170,7 @@ main {
   
     .photo-grid {
       grid-template-columns: repeat(4, 1fr);
-    }
+    } */
 
     @media only screen and (max-width: 480px) {
       header {
