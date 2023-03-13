@@ -5,7 +5,7 @@ This is my repo for ATLS2200.
 ## Projects
 
 - <a href="https://kfischer93.github.io/quarter-term/page5.html">HTML</a>
-- <a href="kfischer93.github.io/css-midterm/cssMid.html">CSS</a>
+- <a href="https://kfischer93.github.io/css-midterm/cssMid.html">CSS</a>
 - JS
 
 ## In-Class Assignments
