@@ -17,7 +17,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 0px;
 }
 
 header img {
@@ -65,8 +65,8 @@ main {
 }
 
 .resume-content img {
-    width: 400px; /* Set the width to 400 pixels */
-    height: auto; /* Keep the aspect ratio of the image */
+    width: 400px; 
+    height: auto; 
     display: block;
     margin: 0 auto;
 }
@@ -85,7 +85,7 @@ main {
   }
 
   .about-content img {
-    width: 50px;
+    width: 400px;
     height: auto;
     margin-right: 20px;
   }
@@ -123,7 +123,7 @@ main {
     height: auto;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 400px) {}
   header {
     flex-direction: column;
     justify-content: center;
@@ -131,11 +131,11 @@ main {
   }
 
   header img {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   nav {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   nav ul {
