@@ -172,6 +172,6 @@ main {
   }
 
   .resume-content img {
-    width: 600px;
+    width: 100%;
     margin-bottom: 20px;
 }
