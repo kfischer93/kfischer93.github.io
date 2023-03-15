@@ -73,15 +73,12 @@ main {
 
   #about {
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
 
   .about-content {
     display: flex;
     flex-direction: row;
-    align-items: center;
   }
 
   .about-content img {
@@ -103,6 +100,7 @@ main {
   .about-content h2 {
     font-size: 60px;
     font-style: italic;
+    font-weight: bold;
     color: rgb(243, 56, 14);
     line-height: 1.5;
   }
@@ -135,7 +133,7 @@ main {
   }
 
   nav {
-    margin-top: 10px;
+    margin-top: 0px;
   }
 
   nav ul {
@@ -144,7 +142,7 @@ main {
 
   nav li {
     margin-left: 0;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     text-align: center;
   }
 
@@ -154,14 +152,17 @@ main {
   }
   .about-content h2 {
     font-size: 40px;
+    text-align: right;
+    margin-right: 70px;
   }
   .about-content p {
     font-size: 16px;
+    text-align: left;
   }
   .about-content img {
     width: 100%;
     margin-right: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .MainPage-content img {
@@ -171,7 +172,6 @@ main {
   }
 
   .resume-content img {
-    width: 100%;
-    margin-right: 0;
+    width: 600px;
     margin-bottom: 20px;
 }
