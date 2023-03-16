@@ -27,11 +27,16 @@ header img {
 }
 nav ul {
     display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 nav li {
     list-style: none;
     margin-left: 20px;
+    position: sticky;
 }
 
 nav a {
@@ -39,6 +44,7 @@ nav a {
     font-size:15px;
     color: #fff;
     text-decoration: none;
+    position: sticky;
 }
 
 nav a:hover {
@@ -134,16 +140,27 @@ main {
 
   nav {
     margin-top: 0px;
+    position: sticky;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   nav ul {
-    flex-direction: column;
+    flex-direction:row;
+    justify-content: space-between;
+    position: sticky;
+    align-items: center;
+    margin: 0;
+    padding: 0;
   }
 
   nav li {
     margin-left: 0;
     margin-bottom: 5px;
     text-align: center;
+    position: sticky;
   }
 
   .about-content {
