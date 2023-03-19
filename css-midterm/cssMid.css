@@ -27,19 +27,21 @@ header img {
 }
 nav ul {
     display: flex;
-    flex-direction:row;
+    flex-direction:column;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
 }
 
 nav li {
+    flex-direction:column;
     list-style: none;
     margin-left: 20px;
     position: sticky;
 }
 
 nav a {
+    flex-direction:column;
     font-weight: lighter;
     font-size:15px;
     color: #fff;
@@ -148,7 +150,7 @@ main {
   }
 
   nav ul {
-    flex-direction:row;
+    flex-direction:column;
     justify-content: space-between;
     position: sticky;
     align-items: center;
