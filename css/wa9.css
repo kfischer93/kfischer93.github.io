@@ -1,0 +1,53 @@
+/* Set font and background colors */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #3db0b0;
+  }
+  
+  /* Add some padding to the body and center the content */
+  body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Style the input field */
+  input[type="text"] {
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid #473f3f;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Style the radio buttons */
+  input[type="radio"] {
+    margin: 10px;
+  }
+  
+  /* Style the button */
+  button {
+    padding: 10px;
+    background-color: #f4f126;
+    color: #473f3f;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Style the button when hovering over it */
+  button:hover {
+    background-color: #f33591;
+  }
+  
+  /* Style the story text */
+  .story {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #473f3f;
+    border-radius: 4px;
+    background-color: #fff;
+  }
