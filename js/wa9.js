@@ -4,10 +4,10 @@ var randomize = document.querySelector('.randomize');
 var story = document.querySelector('.story');
 
 // Set the random values for the story
-var storyText = 'It was snowing mice and chickens, so :insertx: went for a jog. When they arrived at the :inserty:, they did four spins and :insertz:. Dolly Parton saw the whole thing & started crying — :insertx: was actually my mom, and started doing backflips. ';
+var storyText = 'It was snowing mice and chickens, so :insertx: went for a jog. When they arrived at :inserty:, they did four spins and :insertz:. Dolly Parton saw the whole thing & started crying — :insertx: was actually my mom, and started doing backflips. ';
 var insertX = ['my sweet father', 'Toby Keith', 'The General', 'my mom'];
 var insertY = ['my mothers house', 'the last house on the left', 'Dolly World', 'the underworld, unfortunately'];
-var insertZ = ['found a great low rate online', 'went to the general and saved some time', 'evaporated into thin air suddenly all at once'];
+var insertZ = ['found a great low rate online', 'went to the general and saved some time', 'evaporated into thin air suddenly all at once', 'did some math'];
 var name = 'Peanut Butter Sunshine';
 
 // Replace the placeholders with the random values
