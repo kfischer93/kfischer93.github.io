@@ -36,7 +36,7 @@ This is my repo for ATLS2200.
 - <a href="https://kfischer93.github.io/wa/wa6.html">WA6</a>
 - <a href="https://kfischer93.github.io/wa/wa7.html">WA7</a>
 - WA8
-- WA9
+- <a href="https://kfischer93.github.io/wa/wa9.html">WA9</a>
 - WA10
 - WA11
 - WA12
