@@ -1,0 +1,40 @@
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 20px;
+  }
+  
+  img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+  }
+  
+  button {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #dfa8bd;
+    color: white;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #c1f1b3;
+  }
