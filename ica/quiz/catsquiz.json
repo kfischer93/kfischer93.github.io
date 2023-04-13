@@ -1,0 +1,25 @@
+{
+    "cats": [
+      {
+        "name": "Fluffy",
+        "kittens": [
+          { "name": "Tigger", "gender": "male" },
+          { "name": "Shadow", "gender": "female" },
+          { "name": "Mittens", "gender": "male" }
+        ]
+      },
+      {
+        "name": "Mittens",
+        "kittens": [
+          { "name": "Oreo", "gender": "male" },
+          { "name": "Smokey", "gender": "female" }
+        ]
+      },
+      {
+        "name": "Whiskers",
+        "kittens": [
+          { "name": "Toby", "gender": "male" }
+        ]
+      }
+    ]
+  }
