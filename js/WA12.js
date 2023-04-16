@@ -1,67 +1,70 @@
-// Problem 1
-let sam = {
-    firstName: 'Sam',
-    department: 'Tech',
-    designation: 'Manager',
-    salary: 40000,
-    raiseEligible: true,
-  };
-  
-  let mary = {
-    firstName: 'Mary',
-    department: 'Finance',
-    designation: 'Trainee',
-    salary: 18500,
-    raiseEligible: true,
-  };
-  
-  let bill = {
-    firstName: 'Bill',
-    department: 'HR',
-    designation: 'Executive',
-    salary: 21200,
-    raiseEligible: false,
-  };
-  
-  // Problem 2
-  let anna = {
-    firstName: 'Anna',
-    department: 'Tech',
-    designation: 'Executive',
-    salary: 25600,
-    raiseEligible: false,
-  };
-  
-  let employees = [sam, mary, bill, anna];
-  
-  // Problem 3
-  let totalSalary = employees.reduce((acc, employee) => {
-    return acc + employee.salary;
-  }, 0);
-  
-  console.log('Total salary for all employees:', totalSalary);
-  
-  // Problem 4
-  function giveRaise(employee) {
-    if (employee.raiseEligible) {
-      employee.salary = employee.salary * 1.1;
-      employee.raiseEligible = false;
+// Problemo 1
+let employee = '{ "employees" : [' +
+'{ "firstName":"Sam" , "department":"Tech" , "Designation":"Manager", "Salary":"40000", "Raise Eligible":"true" },' +
+'{ "firstName":"Mary" , "department":"Finance" , "Designation":"Trainee", "Salary":"18500", "Raise Eligible":"true" },' +
+'{ "firstName":"Bill" , "department":"HR" , "Designation":"Executive", "Salary":"21200", "Raise Eligible":"false" } ]}';
+let obj = JSON.parse(employee);
+console.log("Problem 1")
+console.log(obj); 
+
+
+
+//Problemo 2
+let company = '{ "company" :[' +
+'{ "companyName": "Tech Stars" , "website": "www.techstars.site" } ]}';
+'{ "employees" : [' +
+'{ "firstName":"Sam" , "department":"Tech" , "Designation":"Manager", "Salary":"40000", "Raise Eligible":"true" },' +
+'{ "firstName":"Mary" , "department":"Finance" , "Designation":"Trainee", "Salary":"18500", "Raise Eligible":"true" },' +
+'{ "firstName":"Bill" , "department":"HR" , "Designation":"Executive", "Salary":"21200", "Raise Eligible":"false" } ]}';
+const obj2 = JSON.parse(company);
+console.log("Problem 2")
+console.log(obj2); 
+
+
+
+//Problemo 3
+let newEmployee = '{ "employees" : [' +
+'{ "firstName":"Anna" , "department":"Tech" , "Designation":"Executive", "Salary":"25600", "Raise Eligible":"false" }]}';
+const obj3 = JSON.parse(newEmployee);
+obj2.company.employees.push(obj3.employees[0]);
+console.log("Problem 3")
+console.log(obj3); 
+
+
+
+
+//Problemo 4
+let totalSalary = 0;
+for (let i = 0; i < obj2.company.employees.length; i++) {
+  totalSalary += parseInt(obj2.company.employees[i].Salary);
+}
+console.log("Problem 4");
+console.log(`Total salary for all employees: ${totalSalary}`);
+
+
+
+//Problemo 5
+function giveRaise(companyObj) {
+  const employees = companyObj.company.employees;
+  for (let i = 0; i < employees.length; i++) {
+    if (employees[i]["Raise Eligible"] === "true") {
+      employees[i].Salary = parseInt(employees[i].Salary) * 1.1;
+      employees[i]["Raise Eligible"] = "false";
     }
   }
-  
-  employees.forEach(giveRaise);
-  
-  console.log('Employees after raises:', employees);
-  
-  // Problem 5
-  let workingFromHome = ['Anna', 'Sam'];
-  
-  employees.forEach(employee => {
-    if (workingFromHome.includes(employee.firstName)) {
-      employee.wfh = true;
-    } else {
-      employee.wfh = false;
-    }
-  });
-  
-  console.log('Employees after wfh update:', employees);
+  return companyObj;
+}
+console.log("Problem 5");
+console.log(`Before giving raise: ${JSON.stringify(obj2)}`);
+console.log(`After giving raise: ${JSON.stringify(giveRaise(obj2))}`);
+
+
+
+//Problemo 6
+const wfhEmployees = ["Anna", "Sam"];
+for (let i = 0; i < obj2.company.employees.length; i++) {
+  const name = obj2.company.employees[i].firstName;
+  obj2.company.employees[i].wfh = wfhEmployees.includes(name);
+}
+console.log("Problem 6");
+console.log(`Updated company JSON: ${JSON.stringify(obj2)}`);
