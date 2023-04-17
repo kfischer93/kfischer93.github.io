@@ -25,11 +25,9 @@ console.log(obj2);
 //Problemo 3
 let newEmployee = '{ "employees" : [' +
 '{ "firstName":"Anna" , "department":"Tech" , "Designation":"Executive", "Salary":"25600", "Raise Eligible":"false" }]}';
-const obj3 = JSON.parse(newEmployee);
-obj2.company.employees.push(obj3.employees[0]);
+obj2.company.employees.push(obj3.newEmployee[0]);
 console.log("Problem 3")
 console.log(obj3); 
-
 
 
 
