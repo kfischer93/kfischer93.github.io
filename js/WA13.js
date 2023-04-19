@@ -1,72 +1,61 @@
-
-
-function check() {
-    console.log('test');
-}
-
-function submit() {
-    alert(output.textContent);
-}
-
-function reset() {
-    outputInt = 0;
-    output.textContent = outputInt;
-}
-
-function minus() {
-    if (outputInt > 0) {
-    outputInt -=1;
-    output.textContent = outputInt; }
-    
-}
-
-function plus() {
-    if (outputInt < 100) {
-    outputInt +=1;
-    output.textContent = outputInt;
-    }
-}
-
-function random() {
-    outputInt = randomNumber(0, 100);
-    output.textContent = outputInt;
-}
-
-function randomNumber(min, max) {
-    const num = Math.floor(Math.random() * (max - min + 1)) + min;
-    return num;
+const numbers = {
+    1: 'uno',
+    2: 'dos',
+    3: 'tres',
+    4: 'cuatro',
+    5: 'cinco',
+    6: 'seis',
+    7: 'siete',
+    8: 'ocho',
+    9: 'nueve',
+    10: 'diez',
+    11: 'once',
+    12: 'doce',
+    13: 'trece',
+    14: 'catorce',
+    15: 'quince',
+    16: 'dieciséis',
+    17: 'diecisiete',
+    18: 'dieciocho',
+    19: 'diecinueve',
+    20: 'veinte',
+    30: 'treinta',
+    40: 'cuarenta',
+    50: 'cincuenta',
+    60: 'sesenta',
+    70: 'setenta',
+    80: 'ochenta',
+    90: 'noventa',
+    100: 'cien'
+  };
+  
+  const slider = document.getElementById('slider');
+  const answerInput = document.getElementById('answer');
+  const submitButton = document.getElementById('submit');
+  const feedback = document.getElementById('feedback');
+  
+  function generateNumber() {
+    return Math.floor(Math.random() * 100) + 1;
   }
-
-
-
-const output = document.querySelector('.output');
-let outputInt = parseInt(output.textContent);
-console.log(outputInt);
-
-const minusButton = document.querySelector('.minus-button').addEventListener('click', minus);
-const plusButton = document.querySelector('.plus-button').addEventListener('click', plus);
-const resetButton = document.querySelector('.reset-button').addEventListener('click', reset);
-const randomButton = document.querySelector('.random-button').addEventListener('click', random);
-const submitButton = document.querySelector('.submit-button').addEventListener('click', submit);
-
-
-/* const button = document.querySelector('.button');
-const output = document.querySelector('.output');
-let phone_content = document.querySelector('.phone');
-button.addEventListener('click', updateOutput);
-function updateOutput() {
-    output.textContent = phone_content.value;
-    alert(phone_content.value);
-}
-*/
-
-
-var slider = document.getElementById("myRange");
-var sliderSubmit = document.querySelector(".slider-submit-button").addEventListener('click', update);
-var sliderOutput = document.querySelector(".slider-output");
-
-
-// Update the current slider value (each time you drag the slider handle)
-function update() {
-  sliderOutput.textContent = slider.value;
-}
+  
+  function checkAnswer() {
+    const num = parseInt(slider.value);
+    const answer = answerInput.value.trim().toLowerCase();
+  
+    if (answer === numbers[num]) {
+      feedback.textContent = `Correct! ${num} is ${numbers[num]} in Spanish. Your volume is now set to ${num}`;
+      feedback.style.color = 'green';
+    } else {
+      feedback.textContent = `Incorrect. ${num} is ${numbers[num]} in Spanish. Your volume remains the same.`;
+      feedback.style.color = 'red';
+    }
+  
+    slider.value = generateNumber();
+    answerInput.value = '';
+  }
+  
+  slider.addEventListener('input', function() {
+    feedback.textContent = '';
+  });
+  
+  submitButton.addEventListener('click', checkAnswer);

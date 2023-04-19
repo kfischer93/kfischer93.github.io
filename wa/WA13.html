@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="wa13.css">
-    <script defer src="wa13.js"></script>
-</head>
-<body>
-
-</body>
+    <title>Spanish Numbers Quiz</title>
+    <link rel="stylesheet" href="/css/WA13.css">
+  </head>
+  <body>
+        <div class="container">
+            <h1>Change your volume:</h1>
+            <p>Use the slider to select a number between 1 and 100, and then enter the corresponding Spanish word to change your volume.</p>
+            <input type="range" min="1" max="100" value="1" id="slider">
+            <br>
+            <label for="answer">What is the spanish word for your number?</label>
+            <input type="text" id="answer">
+            <button id="submit">¡ir!</button>
+            <p id="feedback"></p>
+        </div>
+    <script src="/js/WA13.js"></script>
+  </body>
 </html>
