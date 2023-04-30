@@ -42,5 +42,5 @@ This is my repo for ATLS2200.
 - <a href="https://kfischer93.github.io/wa/wa11.html">WA11</a>
 - <a href="https://kfischer93.github.io/wa/WA12.html">WA12</a>
 - <a href="https://kfischer93.github.io/wa/WA13.html">WA13</a>
-- WA14
+- <a href="https://api.mapbox.com/styles/v1/kfischer93/clgzhi1ci006701pw64oc7aux.html?title=view&access_token=pk.eyJ1Ijoia2Zpc2NoZXI5MyIsImEiOiJjbGd3ZW1hajUya3RxM3JsaDBjdzM0MHF6In0.Ea9nLjILV6i1YiLio7RP1A&zoomwheel=true&fresh=true#9.98/39.4371/-105.8498/0/3">WA14</a>
 - WA15
