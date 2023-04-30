@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4x4 Vehicle Trails in the US!</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            background-color: #cdccb6;
+            color: #333;
+            padding: 0;
+            display: flex; /* Use Flexbox */
+            flex-direction: column; /* Set Flexbox direction to column */
+            justify-content: center; /* Center content vertically */
+            min-height: 100vh; /* Set the minimum height of the body to 100% of the viewport height */
+        }
+
+        h1 {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 0;
+            font-size: 34px;
+        }
+
+        .turquoise-text {
+            color: #20c6df;
+            font-weight: bolder;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .map-container {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>4x4 Vehicle Trails in the US!</h1>
+    <h3>Trails are shown in <span class="turquoise-text">turquoise</span></h3>
+    <div class="container">
+        <div class="map-container">
+            <iframe width='100%' height='400px' src="https://api.mapbox.com/styles/v1/kfischer93/clgzhi1ci006701pw64oc7aux.html?title=false&access_token=pk.eyJ1Ijoia2Zpc2NoZXI5MyIsImEiOiJjbGd3ZW1hajUya3RxM3JsaDBjdzM0MHF6In0.Ea9nLjILV6i1YiLio7RP1A&zoomwheel=false#9.98/39.4371/-105.8498/0/3" title="4x4 vehicle trails in the US!" style="border:none;"></iframe>
+        </div>
+    </div>
+</body>
+</html>
