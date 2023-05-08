@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Katie Lynn Fischer</title>
+	<link rel="stylesheet" type="text/css" href="/JS Final/jsFinal.css">
+	<script src="/JS Final/jsFinal.js"></script>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+                <li><span class="jsFinal">Home</span></li>
+				<li><a href="/JS Final/resumeFinal.html">Resume</a></li>
+				<li><a href="/JS Final/photosFinal.html">Gallery</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>Katie Lynn Fischer</h1>
+        <section id="about-me">
+            <div class="about-me-image">
+                <img src="/css-midterm/galleryimages/me.jpg" alt="Website owner, Katie Fischer, in Costa Rica">
+            </div>
+            <div class="about-me-text">
+                    <h2> Howdy! </h2>
+                    <p>I'm Katie Lynn. I've spent the last 8 years as a photographer, which my website shows just a small portion of the work I've done. I've shot lifestyle, weddings, boudoir, product, headshots, family, maternity, etc. While I've loved being behind the camera, I am currently pursuing new creative avenues through the Creative Technology & Design Major at University of Colorado, Boulder. My expected graduation is Fall of 2024.</p>
+                </p>
+            </div>
+        </section>
+    </main>  
+		<button id="get-info">Get in touch</button>
+		<div id="popup-form" class="form-popup">
+			<form class="form-container" action="jsFinal.php" method="POST">
+				<h3>Let's connect!</h3>
+				<label for="name"><b>Name</b></label>
+				<input type="text" placeholder="Enter Name" name="name" required>
+
+				<label for="email"><b>Email</b></label>
+				<input type="email" placeholder="Enter Email" name="email" required>
+
+				<label for="message"><b>Message</b></label>
+				<textarea placeholder="Enter Message" name="message" required></textarea>
+
+				<button type="submit" class="btn">Submit</button>
+				<button type="button" class="btn cancel" id="close-btn">Close</button>
+			</form>
+		</div>
+	</main>
+	<footer>
+		<p>&copy; 2023 Katie Lynn Fischer</p>
+	</footer>
+</body>
+</html>
