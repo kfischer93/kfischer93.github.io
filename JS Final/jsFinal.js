@@ -43,3 +43,35 @@ galleryImgs.forEach(function(img) {
 
 
 });
+
+// Get the modal element
+var modal = document.getElementById("modal");
+
+// Get the modal image element
+var modalImage = document.getElementById("modal-image");
+
+// Get all design images
+var designImages = document.querySelectorAll("#design-gallery img");
+
+// Loop through the design images and add click event listeners
+designImages.forEach(function (img) {
+    img.addEventListener("click", function () {
+        modal.style.display = "block";
+        modalImage.src = this.src;
+    });
+});
+
+// Get the close button
+var closeButton = document.querySelector(".close");
+
+// When the close button is clicked, close the modal
+closeButton.addEventListener("click", function () {
+    modal.style.display = "none";
+});
+
+// Close the modal when clicking outside the modal content
+window.addEventListener("click", function (event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+});
