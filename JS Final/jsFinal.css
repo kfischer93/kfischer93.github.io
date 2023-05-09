@@ -1,7 +1,7 @@
 body {
     font-size: 14px;
     font-family: Avenir,Open Sans,Helvetica,sans-serif;
-    color: #1e1e1e;
+    color: #333;
 }
 
 header {
@@ -28,13 +28,16 @@ nav li a {
 }
 
 main {
-	margin: 20px auto;
-    padding: 20px;
+	margin: 5px auto;
+    padding: 5px auto;
 }
 
 h1 {
-	font-size: 48px;
+	font-size: 28px;
+    color: #333;
 	text-align: center;
+    margin-top: 1px;
+    margin-bottom: 1px;
 }
 
 #about-me {
@@ -63,29 +66,35 @@ h1 {
     }
 }
 
+body, html {
+    height: 100%; /* Add this property to set the height of the body and html elements to 100% */
+}
+
+#home-img {
+    height: 100%; /* Add this property to make the home-img div take up the entire height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+#home-img img {
+    width: 100%; /* This property ensures the image takes up the entire width */
+    height: 100%; /* This property ensures the image takes up the entire height */
+    object-fit: cover; /* This property maintains the aspect ratio of the image while filling the container */
+}
+
+
 .home-link {
     color: #fff;
     cursor: default;
 }
 
-#home-img {
-	margin-top: 30px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-#home-img img {
-	width: 100%;
-	max-width: 800px;
-	height: auto;
-}
-
 #get-info {
     font-family: Avenir,Open Sans,Helvetica,sans-serif;
 	display: block;
-	margin: 50px auto;
-	padding: 10px 20px;
+	margin: 20px auto;
+	padding:5px 20px;
 	font-size: 18px;
 	background-color: #333;
 	color: #fff;
@@ -161,6 +170,7 @@ footer {
 	display: block;
 	margin-bottom: 10px;
 	padding: 5px;
+    font-family: Avenir,Open Sans,Helvetica,sans-serif;
 	width: 100%;
 	border-radius: 3px;
 	border: 1px solid #827f74;
@@ -267,7 +277,7 @@ footer {
 .header-logo {
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 1px;
     height: 60px; /* Adjust the height of your logo if necessary */
     width: auto;
 }
