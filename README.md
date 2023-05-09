@@ -6,7 +6,7 @@ This is my repo for ATLS2200.
 
 - <a href="https://kfischer93.github.io/quarter-term/page5.html">HTML</a>
 - <a href="https://kfischer93.github.io/css-midterm/cssMid.html">CSS</a>
-- JS
+- <a href="https://kfischer93.github.io/JS Final/jsFinal.html">JS</a> (Not working)
 - <a href="https://kfischer93.github.io/ica/quiz/cats.html">Quiz 10</a>
 
 ## In-Class Assignments
