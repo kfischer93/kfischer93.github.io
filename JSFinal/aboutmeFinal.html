@@ -5,31 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>About Me | Katie Lynn Fischer</title>
 	<link rel="stylesheet" type="text/css" href="/JSFinal/jsFinal.css">
+	<script src="/JSFinal/jsFinal.js"></script>
 </head>
 <body>
 	<header>
-		<a href="/JSFinal/jsFinal.html" class="header-logo-link">
-            <img src="/JSFinal/designfiles/b&wlogo.png" alt="my Logo" class="header-logo">
+		<div class="header-container">
+        	<a href="/JSFinal/jsFinal.html" class="header-logo-link">
+            	<img src="/JSFinal/designfiles/b&wlogo.png" alt="my Logo" class="header-logo">
         </a>
 		<nav>
 			<ul>
-				<li><a href="/JSFinal/jsFinal.html"data-page="home">Home</a></li>
-                <li><a href="/JSFinal/aboutmeFinal.html"data-page="about me">About Me</a></li>
-				<li><a href="/JSFinal/resumeFinal.html"data-page="resume">Resume</a></li>
-				<li><a href="/JSFinal/photosFinal.html"data-page="gallery">Gallery</a></li>
-                <li><a href="/JSFinal/designFinal.html"data-page="design">Design</a></li>
+            <li><a href="/JSFinal/jsFinal.html"data-page="home">Home</a></li>
+            <li><a href="/JSFinal/aboutmeFinal.html"data-page="about me">About Me</a></li>
+			<li><a href="/JSFinal/resumeFinal.html"data-page="resume">Resume</a></li>
+			<li><a href="/JSFinal/photosFinal.html"data-page="gallery">Gallery</a></li>
+            <li><a href="/JSFinal/designFinal.html"data-page="design">Design</a></li>
 			</ul>
 		</nav>
+	</div>
 	</header>
 	<main>
 		<section id="about-me">
             <div class="about-me-image">
-                <img src="/css-midterm/galleryimages/me.jpg" alt="Website owner, Katie Fischer, in Costa Rica">
+                <img src="/JSFinal/designfiles/bnwmeeee.jpg" alt="Website owner, Katie Fischer, in Aspen">
             </div>
             <div class="about-me-text">
                     <p>Hi, I'm Katie Lynn. I've spent the last 8 years as a photographer, which my website shows just a small portion of the work I've done. I've shot lifestyle, weddings, boudoir, product, headshots, family, maternity, etc. While I've loved being behind the camera, I am currently pursuing new creative avenues through the <a href= "https://www.colorado.edu/atlas/">Creative Technology & Design</a> program at University of Colorado, Boulder. My expected graduation is Fall of 2024. I've included some of my design work under the "Design" tab. When I'm not photographing or at school, I am definitely hanging out with my cattle dog, <a href="https://www.instagram.com/billiegirlblue/">Billie</a>, playing in the snow, or taking my car off-road. I hope we can connect!</p>
-            
+					<button id="get-info">Get in touch</button>
+					<div id="popup-form" class="form-popup">
+						<form class="form-container" action="https://formspree.io/f/mzbqolvb" method="POST">
+							<h3>Let's chat!</h3>
+							<label for="name"><b>Name</b></label>
+							<input type="text" placeholder="Enter Name" name="name" required>
+			
+							<label for="email"><b>Email</b></label>
+							<input type="email" placeholder="Enter Email" name="email" required>
+			
+							<label for="message"><b>What would you like to connect about?</b></label>
+							<textarea placeholder="Enter Message" name="message" required></textarea>
+			
+							<button type="submit" class="btn">Submit</button>
+							<button type="button" class="btn cancel" id="close-btn">Close</button>
+						
+					</div>
             </div>
+		
         </section>
 	</main>
 	<footer>

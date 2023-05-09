@@ -1,45 +1,60 @@
+/* Consistent things on whole website */
 body {
     font-size: 14px;
     font-family: Avenir,Open Sans,Helvetica,sans-serif;
     color: #333;
 }
-
 header {
 	background-color: #333;
 	color: #fff;
 	padding: 20px;
-	width: 100%;
+    z-index: 1000; /* Add this line */
 }
-
 nav ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
-
 nav li {
 	display: inline-block;
 	margin-right: 20px;
 }
-
 nav li a {
-	color: #fff;
+	color: #fcfefe;
 	text-decoration: none;
 }
-
 main {
 	margin: 5px auto;
     padding: 5px auto;
 }
-
 h1 {
 	font-size: 28px;
-    color: #333;
+    color: #379596;
 	text-align: center;
-    margin-top: 1px;
-    margin-bottom: 1px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+body, html {
+    height: 100%; 
+}
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+.hidden {
+	display: none;
 }
 
+
+
+
+
+
+/* About me page styling */
 #about-me {
     display: flex;
     flex-wrap: wrap;
@@ -59,94 +74,54 @@ h1 {
     max-width: 600px;
 }
 
-@media (max-width: 768px) {
-    .about-me-image, .about-me-text {
-        flex-basis: 100%;
-        text-align: center;
-    }
-}
 
-body, html {
-    height: 100%; /* Add this property to set the height of the body and html elements to 100% */
-}
 
+
+
+/* Home page stuff */
 #home-img {
-    height: 100%; /* Add this property to make the home-img div take up the entire height */
+    height: 100%; 
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative; 
 }
-
 #home-img img {
-    width: 100%; /* This property ensures the image takes up the entire width */
-    height: 100%; /* This property ensures the image takes up the entire height */
-    object-fit: cover; /* This property maintains the aspect ratio of the image while filling the container */
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
 }
-
-
 .home-link {
     color: #fff;
     cursor: default;
 }
 
+
+
+
+/* Get info button */
 #get-info {
     font-family: Avenir,Open Sans,Helvetica,sans-serif;
 	display: block;
 	margin: 20px auto;
 	padding:5px 20px;
 	font-size: 18px;
-	background-color: #333;
+	background-color: #379596;
 	color: #fff;
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
 }
-
 #get-info:hover {
 	background-color: #fff;
 	color: #333;
 }
-
-footer {
-	background-color: #333;
-	color: #fff;
-	padding: 10px;
-	text-align: center;
-}
-
-#gallery {
-	display:  grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-gap: 20px;
-	justify-content: center;
-}
+ 
 
 
-#gallery img {
-	width: 100%;
-    height: auto; 
-	object-fit: cover;
-	transition: transform 0.5s ease-in-out, filter 0.2s ease-in-out;
-	filter: brightness(0.7);
-}
 
-@media (max-width: 600px) {
-	#gallery img {
-		width: 100%;
-		height: auto;
-	}
-}
-
-#gallery img:hover {
-	filter: brightness(1);
-}
-
-.hidden {
-	display: none;
-}
-
-#popup-form {
+/* get info popup form after button is pressed */
+ #popup-form {
 	display: none;
     width: 50%;
 	position: fixed;
@@ -159,12 +134,10 @@ footer {
 	border-radius: 5px;
 	box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
 }
-
 #popup-form label {
 	display: block;
 	margin-bottom: 10px;
 }
-
 #popup-form input,
 #popup-form textarea {
 	display: block;
@@ -175,7 +148,6 @@ footer {
 	border-radius: 3px;
 	border: 1px solid #827f74;
 }
-
 #popup-form button {
 	display: block;
 	margin-top: 10px;
@@ -188,7 +160,6 @@ footer {
 	border-radius: 5px;
 	cursor: pointer;
 }
-
 #popup-form button[type="submit"] {
 	background-color: #f34e0e;
 }
@@ -197,47 +168,53 @@ footer {
 	background-color: #fff;
 	color: #333;
 }
-
 #popup-form h3 {
 	margin-top: 0;
 }
 
-@media (max-width: 600px) {
-	#popup-form {
-		width: 90%;
-	}
+
+
+
+/* Photo gallery stuff */
+#gallery {
+	display:  grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+	justify-content: center;
 }
-
+#gallery img {
+	width: 100%;
+    height: auto; 
+	object-fit: cover;
+	transition: transform 0.5s ease-in-out, filter 0.2s ease-in-out;
+	filter: brightness(0.7);
+}
+#gallery img:hover {
+	filter: brightness(1);
+}
 #resume-image {
-    max-height: 800px; /* Set the maximum width of the image, adjust the value as needed */
-    height: 100%; /* Make the image responsive */
-    width: auto; /* Maintain the aspect ratio */
-    display: block; /* Make the image a block element */
-    margin: 0 auto; /* Center the image horizontally */
+    max-height: 800px; 
+    height: 100%; 
+    width: auto; 
+    display: block; 
+    margin: 0 auto; 
   }
-
-
-
-  #design-gallery {
+#design-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 20px;
     justify-items: center;
     align-items: center;
 }
-
 #design-gallery img {
     width: 100%;
     height: auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
 }
-
 #design-gallery img:hover {
     transform: scale(1.05);
 }
-
-
 .modal {
     display: none;
     position: fixed;
@@ -249,7 +226,6 @@ footer {
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.8);
 }
-
 .modal-content {
     margin: 15% auto;
     display: block;
@@ -257,7 +233,6 @@ footer {
     max-width: 700px;
     height: auto;
 }
-
 .close {
     position: absolute;
     top: 15px;
@@ -268,16 +243,110 @@ footer {
     transition: 0.3s;
     cursor: pointer;
 }
-
 .close:hover {
-    color: #bbb;
+    color: #827a7a;
 }
 
 
+
+/* logo */
 .header-logo {
     position: absolute;
-    top: 10px;
-    right: 1px;
-    height: 60px; /* Adjust the height of your logo if necessary */
-    width: auto;
+    top: 9px;
+    right: 15px;
+    height: 60px; 
+    width: auto; 
+}
+
+
+
+
+
+/* MEDIA QUERIES BELOW */
+
+@media (max-width: 480px) {
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .header-logo {
+        width: 70px; /* Adjust the size according to your preference */
+        height: auto;
+        align-items: center;
+    
+    }
+    nav ul {
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 5px; /* Add some space between the nav items */
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .header-logo {
+        width: 70px; 
+        height: auto;
+        align-items: center;
+    
+    }
+    nav ul {
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    #home-img {
+        z-index: 0;
+    }
+
+    nav ul li {
+        margin-bottom: 5px; 
+    }
+}
+
+@media (max-width: 480px) {
+  #home-img img {
+    transform: rotate(90deg);
+    height: 50vh;
+  }
+}
+
+@media (max-width: 768px) {
+    .about-me-image, .about-me-text {
+        flex-basis: 50%;
+        text-align: left;
+        font-size: 10px;
+    }
+}
+
+
+@media (max-width: 600px) {
+	#gallery img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media (max-width: 600px) {
+	#popup-form {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+    #resume-image {
+        width: 90%; /* This scales the image to fit the container width */
+        height: auto; /* This maintains the aspect ratio */
+    }
 }
