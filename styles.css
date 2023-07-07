@@ -298,6 +298,44 @@ footer {
 /* MEDIA QUERIES BELOW */
 
 @media (max-width: 480px) {
+    #prices {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #prices ul {
+        padding: 0;
+    }
+
+    #prices .item-title {
+        font-size: 16px;
+    }
+
+    #prices .item-desc {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    #prices {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #prices ul {
+        padding: 0;
+    }
+
+    #prices .item-title {
+        font-size: 16px;
+    }
+
+    #prices .item-desc {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
     .header-container {
         display: flex;
         flex-direction: column;
