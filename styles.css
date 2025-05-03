@@ -1,0 +1,397 @@
+/* Reset default margins so header & hero can span full width */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Consistent things on whole website */
+body {
+  font-size: 14px;
+  font-family: Avenir, Open Sans, Helvetica, sans-serif;
+  color: #333;
+  animation: changeColor 1s infinite;
+}
+/* @keyframes changeColor {
+  0% { background-color: #ffffff; }
+  50% { background-color: #ff6347; }
+  100% { background-color: #ffffff; }
+} */
+
+/* ------------------- */
+/* Header & Navigation */
+/* ------------------- */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;       /* only top/bottom */
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+/* inner container: nav left, logo right, centered */
+.header-container {
+  max-width: 1200px;     /* constrain your content */
+  margin: 0 auto;
+  padding: 0 20px;       /* side gutters */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* nav links */
+.header-container nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+.header-container nav a {
+  color: #fcfefe;
+  text-decoration: none;
+}
+
+/* logo sits on the right, small */
+.header-logo {
+  height: 40px;
+  width: auto;
+  position: static;
+  margin: 0;
+}
+
+/* ------------- */
+/* Main & Hero   */
+/* ------------- */
+main {
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Hero image wrapper */
+#home-img {
+  position: relative;
+  height: 100vh;      /* full viewport height */
+  width: 100vw;       /* full viewport width */
+  overflow: hidden;
+}
+#home-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#home-img #welcome {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+
+  background: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+#home-img #welcome h1 {
+  font-size: 48px;
+  color: #fff;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* global headings */
+h1 {
+  font-size: 28px;
+  color: #eb37ca;
+  text-align: center;
+  margin: 40px 0 20px;
+  padding: 0;
+  line-height: 1.2;
+}
+
+/* ----------- */
+/* Get‑Info Btn */
+/* ----------- */
+#get-info {
+  font-family: Avenir, Open Sans, Helvetica, sans-serif;
+  display: block;
+  margin: 20px auto;
+  padding: 5px 20px;
+  font-size: 18px;
+  background-color: #eb37ca;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#get-info:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* ---------------- */
+/* Popup Contact Form */
+/* ---------------- */
+#popup-form {
+  display: none;
+  width: 50%;
+  max-width: 500px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+#popup-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+#popup-form input,
+#popup-form textarea {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  font-family: Avenir, Open Sans, Helvetica, sans-serif;
+  border-radius: 3px;
+  border: 1px solid #827f74;
+}
+#popup-form button {
+  display: block;
+  margin-top: 10px;
+  padding: 20px 30px;
+  font-size: 18px;
+  background-color: #d5c5c5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#popup-form button[type="submit"] {
+  background-color: #f34e0e;
+}
+#popup-form button:hover {
+  background-color: #fff;
+  color: #333;
+}
+#popup-form h3 {
+  margin-top: 0;
+}
+
+/* ---------------- */
+/* About Me Section */
+/* ---------------- */
+#about-me {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.about-me-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+.about-me-text {
+  max-width: 600px;
+}
+
+/* ---------------- */
+/* Gallery & Design */
+/* ---------------- */
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  justify-content: center;
+}
+#gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out, filter 0.2s ease-in-out;
+  filter: brightness(0.7);
+}
+#gallery img:hover {
+  filter: brightness(1);
+}
+
+#resume-image {
+  max-height: 800px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+#design-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+#design-gallery img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease-in-out;
+}
+#design-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* -------- */
+/* Modal    */
+/* -------- */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+.modal-content {
+  margin: 15% auto;
+  width: 80%;
+  max-width: 700px;
+}
+.close {
+  position: absolute;
+  top: 15px; right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.close:hover {
+  color: #827a7a;
+}
+
+/* ------ */
+/* Pricing */
+/* ------ */
+#prices {
+  text-align: left;
+  margin: 50px 300px;
+}
+#prices ul {
+  list-style: none;
+  padding: 10px;
+}
+#prices .item-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 0;
+}
+#prices .item-desc {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* ------------------------ */
+/* Responsive Media Queries */
+/* ------------------------ */
+@media (max-width: 768px) {
+  #prices { margin: 50px 20px; }
+  .about-me-image,
+  .about-me-text {
+    flex-basis: 50%;
+    text-align: left;
+    font-size: 10px;
+  }
+  #resume-image { width: 90%; }
+}
+
+@media (max-width: 600px) {
+  #gallery img { width: 100%; height: auto; }
+  #popup-form { width: 90%; }
+}
+
+@media (max-width: 480px) {
+  /* Stack nav vertically and logo underneath */
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .header-container nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .header-logo {
+    margin-top: 10px;
+  }
+  #home-img img {
+    transform: rotate(90deg);
+    height: 50vh;
+  }
+  #prices { margin: 50px 10px;}
+}
+
+#projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  border: none;
+  box-shadow: none;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-card h2 {
+  font-size: 20px;
+  margin: 10px 0 0;
+  color: #eb37ca;
+}
+
+.project-card p {
+  font-size: 14px;
+  padding: 0 10px 15px;
+  color: #333;
+}
+
+button.btn,
+a.btn {
+  font-family: Avenir, Open Sans, Helvetica, sans-serif;
+  display: inline-block;
+  padding: 8px 20px;
+  font-size: 15px;
+  background-color: #eb37ca;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
