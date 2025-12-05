@@ -61,9 +61,7 @@ header {
   margin: 0;
 }
 
-/* ------------- */
-/* Main & Hero   */
-/* ------------- */
+/* Main & Hero */
 main {
   margin: 0 auto;
   padding: 0;
@@ -212,12 +210,11 @@ h1 {
   max-width: 600px;
 }
 
-/* ---------------- */
 /* Gallery & Design */
-/* ---------------- */
+
 #gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   justify-content: center;
 }
@@ -254,24 +251,70 @@ h1 {
   height: auto;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   transition: transform 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 #design-gallery img:hover {
-  transform: scale(1.05);
+  transform: scale(1.5);
+  z-index: 10;
+}
+
+/* Data Visualization Section */
+
+#data-viz-section {
+  margin: 80px auto 40px;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+#data-viz-section h2 {
+  font-size: 24px;
+  color: #eb37ca;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#data-viz-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+#data-viz-gallery img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+#data-viz-gallery img:hover {
+  transform: scale(1.0);
+}
+
+@media (max-width: 768px) {
+  #data-viz-gallery {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* -------- */
 /* Modal    */
 /* -------- */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.8);
+.modal-content {
+  display: relative;
+  margin: auto;
+  max-width: 90%;
+  max-height: 90vh;
+  object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
 
 .modal-content {
   margin: 15% auto;
@@ -446,4 +489,60 @@ a.btn {
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
+}
+
+
+/* --------------------- */
+/* Pic-Time Gallery Embed */
+/* --------------------- */
+#pictime-gallery {
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+#pictime-gallery h2 {
+  font-size: 24px;
+  color: #eb37ca;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pictime-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%; /* This creates a 4:3 aspect ratio, adjust if needed */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.pictime-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+#additional-gallery {
+  margin: 60px auto 40px;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+#additional-gallery h2 {
+  font-size: 24px;
+  color: #eb37ca;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Responsive adjustments for Pic-Time gallery */
+@media (max-width: 768px) {
+  .pictime-container {
+    padding-bottom: 100%; /* Taller aspect ratio for mobile */
+  }
 }
