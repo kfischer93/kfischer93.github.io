@@ -1,61 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>About Me | Katie Lynn Fischer</title>
-	<link rel="stylesheet" type="text/css" href="/styles.css">
-	<script src="/tools.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | Katie Lynn Fischer</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+  <script src="/tools.js"></script>
 </head>
 <body>
-	<header>
-		<div class="header-container">
-        	<a href="/" class="header-logo-link">
-            	<img src="/designfiles/b&wlogo.png" alt="my Logo" class="header-logo">
-        </a>
-		<nav>
-			<ul>
-				<li><a href="/"data-page="home">Home</a></li>
-				<li><a href="/aboutme.html"data-page="about me">About Me</a></li>
-				<li><a href="/resume.html"data-page="resume">Resume</a></li>
-				<li><a href="/photos.html"data-page="gallery">Gallery</a></li>
-				<li><a href="projects.html"data-page="projects">Projects</a></li>
-				<li><a href="/design.html"data-page="design">Portfolio</a></li>
-				<li><a href="/pricing.html"data-page="prices">Services</a></li>
-			</ul>
-		</nav>
-	</div>
-	</header>
-	<main>
-		<section id="about-me">
-            <div class="about-me-image">
-                <img src="/designfiles/me.JPG" alt="Website owner, Katie Fischer, in Aspen">
-            </div>
-            <div class="about-me-text">
-                    <p>Hi, I'm Katie Lynn. I've spent the last 10 years as a photographer, which my website shows just a small portion of the work I've done. I've shot lifestyle, weddings, boudoir, product, headshots, family, maternity, etc. While I've loved being behind the camera, I am currently pursuing new creative and technical avenues in <a href= "https://www.colorado.edu/cmci/infoscience">Information Science</a> at the University of Colorado, Boulder. My expected graduation is Spring of 2026. I've included some of my design work under the "Design" tab. When I'm not photographing or at school, I am definitely hanging out with my cattle dogs, Billie & Frankie, playing in the snow, or taking my car off-road. I hope we can connect!</p>
-					<button id="get-info">Get in touch</button>
-					<div id="popup-form" class="form-popup">
-						<form class="form-container" action="https://formspree.io/f/mzbqolvb" method="POST">
-							<h3>Let's chat!</h3>
-							<label for="name"><b>Name</b></label>
-							<input type="text" placeholder="Enter Name" name="name" required>
-			
-							<label for="email"><b>Email</b></label>
-							<input type="email" placeholder="Enter Email" name="email" required>
-			
-							<label for="message"><b>What would you like to connect about?</b></label>
-							<textarea placeholder="Enter Message" name="message" required></textarea>
-			
-							<button type="submit" class="btn">Submit</button>
-							<button type="button" class="btn cancel" id="close-btn">Close</button>
-						
-					</div>
-            </div>
-		
-        </section>
-	</main>
-	<footer>
-		<p><center>&copy; 2025 Katie Lynn Fischer</p>
-	</footer>
+  <header>
+    <div class="header-container">
+      <a href="/" class="header-logo-link">
+        <img src="/designfiles/b&wlogo.webp" alt="my Logo" class="header-logo">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="/" data-page="home">Home</a></li>
+          <li><a href="/aboutme.html" data-page="about me">About Me</a></li>
+          <li><a href="/resume.html" data-page="resume">Resume</a></li>
+          <li><a href="/photos.html" data-page="gallery">Gallery</a></li>
+          <li><a href="/portfolio.html" data-page="portfolio">Portfolio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="about-me">
+      <div class="about-me-image">
+        <img src="/designfiles/me.webp" alt="Katie Lynn Fischer">
+      </div>
+      <div class="about-me-text">
+        <p>Hi, I'm Katie Lynn, a soon-to-be graduate of the University of Colorado Boulder with a degree in Information Science and a minor in Creative Technology & Design. My work lives at the intersection of data, design, and storytelling. I'm especially drawn to UX/UI design and the creative thinking behind it: how interfaces feel, how information flows, and how design can be both functional and genuinely beautiful.</p>
+        <p>Data visualization is another space I love, particularly when it goes beyond charts and becomes something worth looking at. I enjoy finding ways to make complex information accessible and visually compelling.</p>
+        <p>I've spent the last decade as a photographer, and while I'm shifting my focus professionally, I'm still selectively available for shoots. I'm picky about what I take on these days, but if you have something in mind, feel free to reach out - I'm always open to a conversation.</p>
+        <p>When I'm not designing or buried in a project, you'll find me somewhere outside with my cattle dogs Billie & Frankie, off-roading, or planning the next trip somewhere far away. I'm based in Boulder and love to travel. Let's connect!</p>
+        <button id="get-info">Get in touch</button>
+        <div id="popup-form" class="form-popup">
+          <form class="form-container" action="https://formspree.io/f/mzbqolvb" method="POST">
+            <h3>Let's chat!</h3>
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Name" name="name" required>
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter Email" name="email" required>
+            <label for="message"><b>What would you like to connect about?</b></label>
+            <textarea placeholder="Enter Message" name="message" required></textarea>
+            <button type="submit" class="btn">Submit</button>
+            <button type="button" class="btn cancel" id="close-btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p><center>&copy; 2026 Katie Lynn Fischer</center></p>
+  </footer>
 </body>
 </html>
