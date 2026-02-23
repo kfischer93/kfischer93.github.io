@@ -549,3 +549,12 @@ a.btn {
     padding-bottom: 100%; /* Taller aspect ratio for mobile */
   }
 }
+@media (max-width: 768px) {
+  main {
+    padding: 0 20px;
+  }
+
+  section {
+    padding: 0 20px;
+  }
+}
