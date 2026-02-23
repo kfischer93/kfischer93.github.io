@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link rel="stylesheet" href="/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/tools.js"></script>
 </head>
-<body>
-    <header>
-        <div class="header-container">
-        	<a href="/" class="header-logo-link">
-            	<img src="/designfiles/b&wlogo.webp" alt="my Logo" class="header-logo">
-        </a>
-        <button class="hamburger" id="hamburger">☰</button>
-		<nav>
-			<ul>
-                <li><a href="/"data-page="home">Home</a></li>
-                <li><a href="/aboutme.html"data-page="about me">About Me</a></li>
-                <li><a href="/resume.html"data-page="resume">Resume</a></li>
-                <li><a href="/photos.html"data-page="gallery">Gallery</a></li>
-                <li><a href="/portfolio.html" data-page="portfolio">Portfolio</a></li>
-			</ul>
-		</nav>
-	</div>
-    </header>
-    <div style="text-align: center; margin: 30px 0;">
-        <a href="/designfiles/secondary resume.pdf" download class="btn">
-          ⬇ Download My Resume
-        </a>
-        <a href="https://www.linkedin.com/in/katielynnfischer/" target="_blank" class="btn" style="margin-left: 10px;">LinkedIn</a>
+<body data-page="resume">
+  <header>
+    <div class="header-container">
+      <a href="/" class="header-logo-link">
+        <img src="/designfiles/b&wlogo.webp" alt="my Logo" class="header-logo">
+      </a>
+      <button class="hamburger" id="hamburger">☰</button>
+      <nav>
+        <ul>
+          <li><a href="/" data-page="home">Home</a></li>
+          <li><a href="/aboutme.html" data-page="about me">About Me</a></li>
+          <li><a href="/resume.html" data-page="resume">Resume</a></li>
+          <li><a href="/photos.html" data-page="gallery">Gallery</a></li>
+          <li><a href="/portfolio.html" data-page="portfolio">Portfolio</a></li>
+        </ul>
+      </nav>
     </div>
-    <div class="resume-content">
-       <br>
-        <img id="resume-image" src="/designfiles/secondary resume.png" alt="Resume">
-       <br>
-       <br>
-    </div>
-   
+  </header>
 
-    <footer>
-        <p><center>&copy; 2026 Katie Lynn Fischer</p>
-    </footer>
+  <div style="text-align: center; margin: 30px 0;">
+    <a href="/designfiles/secondary resume.pdf" download class="btn">
+      ⬇ Download My Resume
+    </a>
+    <a href="https://www.linkedin.com/in/katielynnfischer/" target="_blank" class="btn" style="margin-left: 10px;">LinkedIn</a>
+  </div>
+
+  <div class="resume-content">
+    <br>
+    <img id="resume-image" src="/designfiles/secondary resume.png" alt="Resume">
+    <br>
+    <br>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Katie Lynn Fischer</p>
+  </footer>
+</body>
 </html>
