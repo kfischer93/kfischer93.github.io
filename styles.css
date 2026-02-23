@@ -42,6 +42,10 @@ header {
   gap: 20px;
 }
 
+.header-container nav {
+  display: flex;
+}
+
 .header-container nav a {
   color: #fcfefe;
   text-decoration: none;
@@ -468,7 +472,14 @@ a.btn {
     overflow-x: hidden;
     width: 100%;
   }
-
+  #home-img {
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  position: relative;
+}
   /* Main content padding */
   main {
     padding: 0 20px;
