@@ -558,3 +558,21 @@ a.btn {
     padding: 0 20px;
   }
 }
+
+@media (max-width: 768px) {
+  main {
+    padding: 0 20px;
+  }
+
+  section {
+    padding: 0 20px;
+  }
+
+  nav ul {
+    padding-left: 20px;
+  }
+
+  .header-container {
+    padding: 0 20px;
+  }
+}
