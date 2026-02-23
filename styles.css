@@ -487,14 +487,40 @@ footer p {
     width: 100%;
   }
 
-  #home-img {
-    width: 100vw;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    position: relative;
+  /* Homepage hero should be full-bleed on mobile */
+  body[data-page="home"] main {
+    padding: 0;
   }
+
+  body[data-page="home"] #home-img {
+    width: 100%;
+    height: calc(100vh - 80px); /* optional: subtract header height so it fits nicer */
+    margin: 0;
+    left: auto;
+    right: auto;
+  }
+
+  body[data-page="home"] #home-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  /* Resume action buttons stack on mobile */
+body[data-page="resume"] .resume-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+body[data-page="resume"] .resume-actions .btn {
+  margin: 0 !important;
+  width: auto;
+  max-width: 90%;
+  text-align: center;
+}
 
   /* Main content padding */
   main {
@@ -543,12 +569,18 @@ footer p {
     padding: 10px 20px;
     margin: 0;
     gap: 0;
+    align-items: flex-end;   /* pushes list items to the right */
+    text-align: right;       /* aligns text to the right */
   }
 
   .header-container nav ul li {
     padding: 10px 0;
-}
-
+    width: 100%;
+    text-align: right;
+  }
+  .header-container nav a {
+    display: inline-block;
+  }
   /* Home image */
   #home-img,
   #home-image {
