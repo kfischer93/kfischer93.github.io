@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sentiment Bot | Katie Lynn Fischer</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="/" class="header-logo-link">
+        <img src="/designfiles/b&wlogo.webp" alt="my Logo" class="header-logo" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="/" data-page="home">Home</a></li>
+          <li><a href="/aboutme.html" data-page="about me">About Me</a></li>
+          <li><a href="/resume.html" data-page="resume">Resume</a></li>
+          <li><a href="/photos.html" data-page="gallery">Gallery</a></li>
+          <li><a href="/portfolio.html" data-page="portfolio">Portfolio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+        <div style="text-align: center; margin-top: 60px;">
+        <img src="/designfiles/vibecheck.png" alt="VibeCheck" style="max-width: 400px; width: 100%; height: auto;" />
+        </div>
+
+
+    <div style="text-align: left; margin: 20px;">
+        <a href="/portfolio.html" class="btn">← Back to Portfolio</a>
+        <br><br>
+        <a href="https://github.com/kfischer93/VibeCheck" target="_blank" class="btn">View on GitHub</a>
+    </div>
+
+    <p class="subtitle" style="text-align:center; max-width: 800px; margin: 0 auto;">
+      A Discord bot that analyzes the emotional content of song lyrics in real time using Spotify, Genius, & VADER sentiment analysis.<br>
+      INFO 3510 Music as Information - CU Boulder, Fall 2025.
+    </p>
+
+    <section style="max-width: 900px; margin: 40px auto;">
+      <h2>The Idea</h2>
+      <p>My first project analyzed sentiment differences between living and deceased emo rap artists... but everything was hardcoded around my specific artist choices. If someone wanted to analyze a song they loved, they couldn't. For this project, I wanted to build something flexible and interactive: a Discord bot anyone could use to explore the emotional content of any song, in real time, right where people already talk about music.</p>
+    </section>
+
+    <section style="max-width: 900px; margin: 40px auto;">
+      <h2>How It Works</h2>
+      <p>The bot connects three APIs to do its job. Spotify provides artist information and top tracks. Genius retrieves the actual lyrics, filtering out remixes and section headers like [Chorus] that would muddy the analysis. VADER: a sentiment tool designed for casual, informal text- analyzes the emotional tone of the lyrics.</p>
+      <p>Rather than averaging a whole song at once (which can hide a lot of emotional nuance), the bot breaks lyrics into 10-word chunks and analyzes each one individually. A song with a devastating verse and an uplifting chorus might average to "neutral"- but the chunk-by-chunk approach shows the actual emotional journey.</p>
+    </section>
+
+    <section style="max-width: 900px; margin: 40px auto;">
+      <h2>Commands</h2>
+      <p><strong>/toptracks [artist]</strong> — Returns an artist's top 10 songs from Spotify, sorted by popularity.</p>
+      <p><strong>/lyrics [artist] + [song]</strong> — Fetches full lyrics from Genius, split into multiple Discord messages if needed.</p>
+      <p><strong>/searchlyrics [snippet]</strong> — Reverse-searches Genius by lyric snippet and returns up to 5 matching songs.</p>
+      <p><strong>/sentiment [artist] + [song]</strong> — Analyzes overall mood and returns a label (Positive, Negative, or Neutral) with a compound score.</p>
+      <p><strong>/sentimentplot [artist] + [song]</strong> — Generates a line graph showing how sentiment shifts throughout the song and uploads it directly to Discord.</p>
+    </section>
+
+    <section style="max-width: 900px; margin: 40px auto;">
+      <h2>Sample Output</h2>
+      <img src="/designfiles/sentiment_plot.png" alt="Sentiment plot of Beach Baby by Bon Iver" style="width: 100%; max-width: 700px; display: block; margin: 0 auto; border-radius: 8px;" />
+      <p style="text-align:center; margin-top: 10px;">Sentiment progression through "Beach Baby" by Bon Iver — chunk by chunk.</p>
+    </section>
+
+    <section style="max-width: 900px; margin: 40px auto;">
+      <h2>Code Structure</h2>
+      <p>The project is organized into four files following a separating concerns design principle. <code>spotifyHelper.py</code> handles all Spotify API calls. <code>geniusHelper.py</code> handles lyrics retrieval and lyric search. <code>vaderHelper.py</code> handles all sentiment analysis and visualization. <code>musicBot.py</code> ties everything together as the main bot with command handlers. When something broke, I only had to look in one place, which made debugging dramatically easier than one tangled file would have been.</p>
+    </section>
+
+    <section style="max-width: 900px; margin: 40px auto;">
+      <h2>What I Learned</h2>
+      <p>This project was as much about how I wrote code as what I built. Coming off my first project, I knew I'd relied too heavily on AI assistance without fully understanding what I'd produced. This time I made a conscious decision to understand every line, even if that meant building something simpler. When Claude showed me a list comprehension I didn't fully grasp, I asked for the longer version, studied both, and made myself able to explain each one. The short version is cleaner, but I can now tell you exactly why it works.</p>
+      <p>VADER has real limitations... it was built for social media, not poetry, and misses sarcasm, irony, hip-hop slang, and songs where negative words carry a positive message. But it still achieves the core goal: making sentiment analysis interactive, visual, and accessible to anyone in a Discord server.</p>
+    </section>
+
+    <section style="max-width: 900px; margin: 40px auto;">
+      <h2>If I Kept Building</h2>
+      <p>Future additions would include Spotify audio feature comparisons (do sad lyrics actually match minor keys?), database storage so repeat requests are instant, better sentiment models trained on lyrics specifically, and word frequency and rhyme scheme analysis. Maybe even triggering a YouTube or Spotify playback link alongside the analysis.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><center>&copy; 2026 Katie Lynn Fischer</center></p>
+  </footer>
+</body>
+</html>
