@@ -468,6 +468,7 @@ a.btn {
   margin-bottom: 30px;
 }
 
+
 /* -------- */
 /* Footer   */
 /* -------- */
@@ -487,6 +488,31 @@ footer p {
     width: 100%;
   }
 
+/* Homepage hero: rotate image on mobile only */
+body[data-page="home"] main {
+  padding: 0;
+}
+
+body[data-page="home"] #home-img {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 80px); /* header-adjusted hero height */
+  overflow: hidden;
+  margin: 0;
+}
+
+body[data-page="home"] #home-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: 140%; /* increase/decrease to taste */
+  max-width: none;
+  transform: translate(-50%, -50%) rotate(90deg);
+  transform-origin: center;
+  object-fit: contain; /* harmless here since abs-positioned */
+}
+  
   /* Homepage hero should be full-bleed on mobile */
   body[data-page="home"] main {
     padding: 0;
@@ -500,12 +526,6 @@ footer p {
     right: auto;
   }
 
-  body[data-page="home"] #home-image {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-  }
 
   /* Resume action buttons stack on mobile */
 body[data-page="resume"] .resume-actions {
