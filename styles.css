@@ -524,29 +524,30 @@ footer p {
     display: block;
   }
 
-  header nav {
+  .header-container nav {
     display: none;
     position: absolute;
-    top: 60px;
+    top: 100%;
     left: 0;
     width: 100%;
     background-color: #3a3a3a;
-    z-index: 999;
+    z-index: 2000;
   }
 
-  header nav.open {
+  .header-container nav.open {
     display: block;
   }
 
-  header nav ul {
+  .header-container nav ul {
     flex-direction: column;
     padding: 10px 20px;
+    margin: 0;
     gap: 0;
   }
 
-  header nav ul li {
+  .header-container nav ul li {
     padding: 10px 0;
-  }
+}
 
   /* Home image */
   #home-img,
