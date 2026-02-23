@@ -46,3 +46,12 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   
 });
+
+const hamburger = document.getElementById('hamburger');
+const nav = document.querySelector('nav');
+
+if (hamburger) {
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+}
