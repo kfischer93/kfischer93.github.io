@@ -29,37 +29,39 @@
   <main>
     <section id="about-me">
       <div class="about-me-image">
-        <img src="/designfiles/biopic.jpeg" alt="Katie Lynn Fischer">
+        <img src="/designfiles/IMG_2950.jpg" alt="Katie Lynn Fischer">
       </div>
+      <!-- <div class="about-me-image">
+        <img src="/designfiles/IMG_2953.jpg" alt="Katie and her dogs">
+      </div> -->
       <div class="about-me-text">
         <p>Hi, I'm Katie Lynn, a soon-to-be graduate of the University of Colorado Boulder with a degree in Information Science and a minor in Creative Technology & Design. My work lives at the intersection of data, design, and storytelling. I'm especially drawn to UX/UI design and the creative thinking behind it: how interfaces feel, how information flows, and how design can be both functional and genuinely beautiful.</p>
         <p>Data visualization is another space I love, particularly when it goes beyond charts and becomes something worth looking at. I enjoy finding ways to make complex information accessible and visually compelling.</p>
         <p>I've spent the last decade as a photographer, and while I'm shifting my focus professionally, I'm still selectively available for shoots. I'm picky about what I take on these days, but if you have something in mind, feel free to reach out - I'm always open to a conversation.</p>
         <p>When I'm not designing or buried in a project, you'll find me somewhere outside with my cattle dogs Billie & Frankie, off-roading, or planning the next trip somewhere far away. I'm based in Boulder and love to travel. Let's connect!</p>
-
-        <div style="display: flex; align-items: center; gap: 10px; margin-top: 10px;">
-          <button id="get-info" style="margin: 0;">Get in touch</button>
-          <a href="https://www.linkedin.com/in/katielynnfischer/" target="_blank" class="btn" style="margin: 0;">LinkedIn</a>
-        </div>
-
-        <div id="popup-form" class="form-popup">
-          <form class="form-container" action="https://formspree.io/f/mzbqolvb" method="POST">
-            <h3>Let's chat!</h3>
-            <label for="name"><b>Name</b></label>
-            <input type="text" placeholder="Enter Name" name="name" required>
-
-            <label for="email"><b>Email</b></label>
-            <input type="email" placeholder="Enter Email" name="email" required>
-
-            <label for="message"><b>What would you like to connect about?</b></label>
-            <textarea placeholder="Enter Message" name="message" required></textarea>
-
-            <button type="submit" class="btn">Submit</button>
-            <button type="button" class="btn cancel" id="close-btn">Close</button>
-          </form>
-        </div>
       </div>
+
+
     </section>
+
+    <div class="about-me-buttons">
+      <button id="get-info">Get in touch</button>
+      <a href="https://www.linkedin.com/in/katielynnfischer/" target="_blank" class="btn">LinkedIn</a>
+    </div>
+
+    <div id="popup-form" class="form-popup">
+      <form class="form-container" action="https://formspree.io/f/mzbqolvb" method="POST">
+        <h3>Let's chat!</h3>
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required>
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email" required>
+        <label for="message"><b>What would you like to connect about?</b></label>
+        <textarea placeholder="Enter Message" name="message" required></textarea>
+        <button type="submit" class="btn">Submit</button>
+        <button type="button" class="btn cancel" id="close-btn">Close</button>
+      </form>
+    </div>
   </main>
 
   <footer>
