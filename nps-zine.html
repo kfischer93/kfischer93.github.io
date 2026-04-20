@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>America the Beautiful, Measured | Katie Lynn Fischer</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="/tools.js"></script>
+</head>
+<body data-page="portfolio">
+  <header>
+    <div class="header-container">
+      <a href="/" class="header-logo-link">
+        <img src="/designfiles/b&wlogo.webp" alt="my Logo" class="header-logo" />
+      </a>
+      <button class="hamburger" id="hamburger">☰</button>
+      <nav>
+        <ul>
+          <li><a href="/" data-page="home">Home</a></li>
+          <li><a href="/aboutme.html" data-page="about me">About Me</a></li>
+          <li><a href="/resume.html" data-page="resume">Resume</a></li>
+          <li><a href="/photos.html" data-page="gallery">Gallery</a></li>
+          <li><a href="/portfolio.html" data-page="portfolio">Portfolio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="zine-hero">
+      <img src="/designfiles/DSC07552.jpg" alt="America the Beautiful, Measured zine cover photographed at Joshua Tree NP" />
+      <div class="zine-hero-overlay">
+        <h1>America the Beautiful, Measured</h1>
+        <p>A data-driven field guide to the National Park System &nbsp;·&nbsp; Spring 2026</p>
+      </div>
+      </div>
+    </div>
+
+    <div class="zine-content">
+      <a href="/portfolio.html" class="btn back-link">← Back to Portfolio</a>
+
+      <p class="zine-subtitle">
+        A printed data zine exploring 45 years of National Park visitation data. Built from public datasets, visualized in Python, designed in Photoshop, and photographed on location at national parks. Made for Communicative Visualization with Evan Peck at CU Boulder, Spring 2026.
+      </p>
+
+      <div class="zine-tags">
+        <span class="tag">Data Visualization</span>
+        <span class="tag">Print Design</span>
+        <span class="tag">Python · Altair · Pandas</span>
+        <span class="tag">Adobe Photoshop</span>
+        <span class="tag">Photography</span>
+        <span class="tag">Google Colab</span>
+        <span class="tag">Spring 2026</span>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat-item">
+          <div class="num">45</div>
+          <div class="lbl">years of NPS<br>visitation data</div>
+        </div>
+        <div class="stat-item">
+          <div class="num">63</div>
+          <div class="lbl">national parks<br>across 30 states</div>
+        </div>
+        <div class="stat-item">
+          <div class="num">8</div>
+          <div class="lbl">pages, one sheet<br>of paper</div>
+        </div>
+      </div>
+
+<h2 style="font-size:20px; color:#eb37ca; text-align:center; margin: 48px 0 24px;">page by page</h2>
+<div class="zine-scroll-strip">
+  <img src="/designfiles/zine_frontcover_1.jpg" alt="Cover" />
+  <img src="/designfiles/zine_pg2.jpg" alt="Page 2" />
+  <img src="/designfiles/zine_pg3.jpg" alt="Page 3" />
+  <img src="/designfiles/zine_pg4_5.jpg" alt="Pages 4-5 spread" />
+  <img src="/designfiles/zine_pg6.jpg" alt="Page 6" />
+  <img src="/designfiles/zine_pg7.jpg" alt="Page 7" />
+  <img src="/designfiles/zine_back.jpg" alt="Back cover" />
+</div>
+
+      <div class="process-section">
+        <h2>how it was made</h2>
+        <ol class="process-list">
+          <li>Started with the NPS Recreation Visits dataset (1979–2024) from Responsible Datasets in Context... 2,846 records, 63 parks, no missing values. Explored it in a Google Colab notebook using Python, Pandas, and Altair.</li>
+          <li>Pulled in US recession dates from NBER to build the economic stress timeline. Merged recession bands into the Altair chart as shaded regions and added annotations for the 1982 uptick, great recession, covid crash, and rebound.</li>
+          <li>Added acreage data from NPS Land Resources Division reports to calculate visitation pressure (visits per acre) across parks. Gateway Arch: 1.2 million visits per acre. Gates of the Arctic: 0.035.</li>
+          <li>Developed a color palette and visual style inspired by risograph and screenprint zine aesthetics... earthy greens, terracotta, cream paper texture. All photography is my own, shot on location at national parks.</li>
+          <li>Designed all 8 panels in Adobe Photoshop using a desaturate + multiply blend mode technique to integrate photos with flat color backgrounds. Assembled the full 11×17 flat sheet with correct panel positions for the fold-and-cut format.</li>
+          <li>Exported with bleed marks and printed at Minuteman Press in Boulder, CO. Folded and cut by hand.</li>
+        </ol>
+      </div>
+
+<div class="photos-section">
+  <h2>in the wild</h2>
+  <div class="photos-grid">
+    <img src="/designfiles/_DSC0470.jpg" alt="Zine photographed on location" />
+    <img src="/designfiles/_DSC0485.jpg" alt="Zine photographed on location" />
+    <img src="/designfiles/_DSC0490.jpg" alt="Zine photographed on location" />
+    <img src="/designfiles/_DSC0495.jpg" alt="Zine photographed on location" />
+    <img src="/designfiles/_DSC0500.jpg" alt="Zine photographed on location" />
+    <img src="/designfiles/_DSC0514.jpg" alt="Zine photographed on location" />
+  </div>
+</div>
+
+      <div class="links-row">
+        <a href="https://www.behance.net/gallery/247266023/America-The-Beautiful-Measured" target="_blank" class="btn">View on Behance</a>
+        <a href="https://colab.research.google.com/drive/1em-PSoDSFQjr5E8iY__41Z_YkG5JmiOx?usp=sharing" target="_blank" class="btn">Google Colab Notebook</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Katie Lynn Fischer</p>
+  </footer>
+
+</body>
+</html>
